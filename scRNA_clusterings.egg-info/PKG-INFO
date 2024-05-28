@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: scRNA-clusterings
+Version: 0.1
+Summary: A package for single-cell RNA sequencing analysis with various clustering methods.
+Home-page: https://github.com/ShiyuanWen/CSE185_FinalProject/tree/main
+Author: Shiyuan Wen
+Author-email: swen@ucsd.edu
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6

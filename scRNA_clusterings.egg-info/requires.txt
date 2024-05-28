@@ -1,0 +1,8 @@
+scanpy
+anndata
+harmonypy
+matplotlib
+seaborn
+leidenalg
+sc3s
+scikit-learn

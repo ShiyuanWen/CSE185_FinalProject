@@ -10,7 +10,7 @@ def kmeans_clustering(adata, n_clusters):
     return kmeans.labels_
 
 def hierarchical_clustering(adata, n_clusters):
-    hierarchical = AgglomerativeClustering(n_clusters=n_clusters).fit(adata.X)
+    hierarchical = AgglomerativeClustering(n_clusters=n_clusters).fit(adata.X.toarray())
     return hierarchical.labels_
 
 def leiden_clustering(adata):
@@ -19,7 +19,7 @@ def leiden_clustering(adata):
 
 def sc3s_clustering(adata, n_clusters):
     sc3s.tl.consensus(adata, n_clusters)
-    return adata.obs['sc3s_clusters'].values
+    return adata.obs[f'sc3s_{n_clusters}']
 
 # Benchmarking with Silhouette Score
 def benchmark_clustering(adata, labels):

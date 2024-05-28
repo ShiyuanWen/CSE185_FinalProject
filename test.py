@@ -9,8 +9,12 @@ import leidenalg
 
 adata_var = sc.read("/Users/swen/Github/CSE185_FinalProject/harmony_integrated.h5ad")
 sc.pp.neighbors(adata_var)
-kmeans_labels = kmeans_clustering(adata_var, n_clusters=7)
-kmeans_score = benchmark_clustering(adata_var, kmeans_labels)
-print(f'K-Means Silhouette Score: {kmeans_score}')
 
-visualize_clustering(adata_var, kmeans_labels, 'K-Means Clustering', method='umap')
+
+sc3s_labels = sc3s_clustering(adata_var, n_clusters=8)
+sc3s_score = benchmark_clustering(adata_var, sc3s_labels)
+
+
+visualize_clustering(adata_var, sc3s_labels, 'sc3s', method='umap')
+
+print(f'sc3s-clustering score Silhouette Score: {sc3s_score}')
