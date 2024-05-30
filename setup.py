@@ -6,7 +6,7 @@ setup(
     description='A package for single-cell RNA sequencing analysis with various clustering methods.',
     author='Shiyuan Wen',
     author_email='swen@ucsd.edu',
-    url='https://github.com/ShiyuanWen/CSE185_FinalProject/tree/main',
+    url='https://github.com/ShiyuanWen/CSE185_FinalProject',
     packages=find_packages(),
     install_requires=[
         'scanpy',
