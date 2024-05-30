@@ -1,5 +1,9 @@
 README.md
 setup.py
+scRNA_clusterings/__init__.py
+scRNA_clusterings/clusterings.py
+scRNA_clusterings/preprocessing.py
+scRNA_clusterings/test.py
 scRNA_clusterings.egg-info/PKG-INFO
 scRNA_clusterings.egg-info/SOURCES.txt
 scRNA_clusterings.egg-info/dependency_links.txt
