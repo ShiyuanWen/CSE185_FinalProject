@@ -1,13 +1,9 @@
-from clusterings import (
-    kmeans_clustering, hierarchical_clustering, leiden_clustering,
+from scRNA_clusterings.clusterings import (
     sc3s_clustering, benchmark_clustering, visualize_clustering
 )
-import scanpy as sc, anndata as ad
-import matplotlib as plt
-import seaborn as sns
-import leidenalg
+import scanpy as sc
 
-adata_var = sc.read("/Users/swen/Github/CSE185_FinalProject/harmony_integrated.h5ad")
+adata_var = sc.read("/scRNA_clusterings/harmony_integrated.h5ad")
 sc.pp.neighbors(adata_var)
 
 
