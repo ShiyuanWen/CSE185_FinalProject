@@ -55,7 +55,7 @@ from scRNA_clusterings import (
 This project is designed to be an intermediate step in single cell analysis workflow.
 It provides various different clustering methods after performing dimensionality reduction.
 A general workflow would be similar to what we have done in CSE 185 lab6. For testing purpose,
-[a harmony-processed PCA object](https://github.com/ShiyuanWen/CSE185_FinalProject/blob/main/scRNA_clusterings/harmony_integrated.h5ad)
+[a harmony-processed PCA object](https://github.com/ShiyuanWen/CSE185_FinalProject/blob/main/benchmarking/harmony_integrated.h5ad)
 can be used to test those functions. 
 
 In your python script, after performing PCA, apply 
